@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--my app color-->
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#F57C00</color>
+    <color name="colorAccent">#232528</color>
+
+
+    <color name="ripple_primary">#F48618</color>
+    <!-- Screens background color-->
+    <color name="bg_screen1">#2E1F27</color>
+    <color name="bg_screen2">#854D27</color>
+    <color name="bg_screen3">#F4C95D</color>
+    <color name="bg_screen4">#FB8C00</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#21161C</color>
+    <color name="dot_dark_screen2">#774422</color>
+    <color name="dot_dark_screen3">#E8BF58</color>
+    <color name="dot_dark_screen4">#ED8200</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#3A2731</color>
+    <color name="dot_light_screen2">#91532A</color>
+    <color name="dot_light_screen3">#FFD260</color>
+    <color name="dot_light_screen4">#FF8C00</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+
+    <color name="white">#ffffff</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="input_normal">#EDE7D9</color>
+    <color name="input_aktif">#FFF8EA</color>
+</resources>
