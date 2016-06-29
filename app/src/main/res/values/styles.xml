@@ -21,7 +21,7 @@
     <style name="TextLabel" parent="TextAppearance.AppCompat">
         <!-- Hint color and label color in FALSE state -->
         <item name="android:textColorHint">@color/input_normal</item>
-        <item name="android:textSize">15sp</item>
+        <item name="android:textSize">15dp</item>
         <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
         <item name="colorAccent">@color/white</item>
         <item name="colorControlNormal">@color/input_normal</item>
