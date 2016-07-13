@@ -18,6 +18,7 @@ import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.fisipol.winarto.sistempelaporanstudi.R;
 import com.fisipol.winarto.sistempelaporanstudi.config.Constant;
@@ -51,7 +52,6 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         sessionManager = new SessionManager(getApplicationContext());
-        //Toast.makeText(getApplicationContext(), "user login status : " + sessionManager.isUserLogedIn(), Toast.LENGTH_SHORT).show();
         if(sessionManager.isUserLogedIn()){
             Intent i = new Intent(getApplicationContext(), MainActivity.class);
             //closing all activity from stack
@@ -100,6 +100,7 @@ public class LoginActivity extends AppCompatActivity {
         pDialog.show();
 
         //start calling volley
+
         StringRequest loginReq = new StringRequest(Request.Method.POST, Constant.HOST + Constant.URL_SERVICE, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -143,6 +144,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onErrorResponse(VolleyError error) {
                 pDialog.dismiss();
                 Toast.makeText(getApplicationContext(),error.toString(),Toast.LENGTH_LONG).show();
+                Log.d("error",error.getStackTrace().toString());
             }
         }){
             @Override
@@ -162,6 +164,7 @@ public class LoginActivity extends AppCompatActivity {
         };
 
         MyApplication.getInstance().addToReqQueue(loginReq);
+
     }
 
 }
